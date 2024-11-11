@@ -21,6 +21,7 @@ apt-get install neofetch cowsay fortune tint micro cmatrix tty-clock docker-ce d
 
 docker run hello-world
 apt-get update
+apt upgrade
 docker --version
 
 docker compose up -d
