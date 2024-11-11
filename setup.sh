@@ -1,7 +1,7 @@
 #/bin/bash/
 
 # Fail on any command.
-set -eux pipefail
+# set -eux pipefail
 
 apt-get update
 apt-get install ca-certificates curl
