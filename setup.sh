@@ -29,8 +29,17 @@ docker compose up -d
 docker compose logs --follow
 echo 
 echo 1. Go to the ports tab
-echo 2. Right click the port with no. 8006
+echo
+echo 2. Right click the first port
 echo and under Port Visiblility 
 echo choose Public
+echo
+echo 3. repeat step 2 until both ports are Public
 echo 
-echo 3. then just open the link in a new tab
+echo 4. then just open the link in a new tab
+echo
+echo Note: that if you see a number in
+echo source control click it
+echo put Windows in the message bar
+echo then click the Commit button
+echo then click sync changes
