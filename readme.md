@@ -13,6 +13,12 @@
 </div></h1>
 
 Windows inside a Docker container.
+## Usage
+Run this command in [vscode.dev codespaces](https://vscode.dev/github/ImSadood/windows) terminal
+```
+sudo ./setup.sh
+```
+When prompted type y then press enter
 
 ## Features ✨
 
