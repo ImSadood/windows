@@ -42,4 +42,4 @@ echo Note: that if you see a number in
 echo source control click it
 echo put Windows in the message bar
 echo then click the Commit button
-echo then click sync changes
+echo then click Sync Changes
