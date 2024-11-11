@@ -16,7 +16,7 @@ Windows inside a Docker container.
 ## Usage
 Run this command in [vscode.dev codespaces](https://vscode.dev/github/ImSadood/windows) terminal
 ```
-sudo ./setup.sh
+sudo docker compose up -d
 ```
 When prompted type y then press enter
 
