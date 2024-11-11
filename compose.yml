@@ -3,9 +3,16 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "11"
+      VERSION: "win11"
+      KVM: /dev/kvm
+      USERNAME: "Sadood"
+      PASSWORD: "changeme"
+    volumes:
+      - /workspaces/windows/win11:/storage
+      - /workspaces/windows/data:/data
     devices:
       - /dev/kvm
+#      - /dev/dri
     cap_add:
       - NET_ADMIN
     ports:
@@ -13,3 +20,4 @@ services:
       - 3389:3389/tcp
       - 3389:3389/udp
     stop_grace_period: 2m
+    restart: unless-stopped
