@@ -1,5 +1,8 @@
 #/bin/bash/
 
+# Fail on any command.
+set -eux pipefail
+
 apt-get update
 apt-get install ca-certificates curl
 install -m 0755 -d /etc/apt/keyrings
@@ -17,5 +20,16 @@ for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker c
 apt-get install neofetch cowsay fortune tint micro cmatrix tty-clock docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 docker run hello-world
+apt-get update
+docker --version
 
 docker compose up -d
+
+docker compose logs --follow
+echo 
+echo 1. Go to the ports tab
+echo 2. Right click the port with no. 8006
+echo and under Port Visiblility 
+echo choose Public
+echo 
+echo 3. then just open the link in a new tab
