@@ -17,7 +17,7 @@ chmod a+r /etc/apt/keyrings/docker.asc
 #apt-get update
 
 #for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do apt-get remove $pkg; done
-#apt-get install neofetch cowsay fortune tint micro cmatrix tty-clock docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+apt-get install neofetch cowsay fortune tint micro cmatrix tty-clock # docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 docker run hello-world
 apt-get update
